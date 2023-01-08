@@ -1,0 +1,27 @@
+{
+    "hero.navigation.items.home": "home",
+
+    
+    "hero.navigation.items.about.content": "about us",
+    "hero.navigation.items.services.content": "our services",
+    "hero.navigation.items.portfolio.content": "portfolio",
+    "hero.navigation.items.contact.content": "contact us",
+
+    "hero.navigation.items.about.link": "/en/about",
+    "hero.navigation.items.services.link": "/en/services",
+    "hero.navigation.items.portfolio.link": "/en/portfolio",
+    "hero.navigation.items.contact.link": "/en/contact",
+
+
+    "hero.header.content": "High-quality web development and design in Linköping",
+    "hero.header.highlight.development": "2",
+    "hero.header.highlight.design": "4",
+    "hero.description": "We help others create a strong brand and reach new heights online. Maximize your online presence with a modern website.",
+
+
+    "hero.buttons.primary.content": "Book a Meeting",
+    "hero.buttons.secondary.content": "View Our Work",
+
+    "hero.buttons.primary.link": "https://calendly.com/vexxed-digital/conversation",
+    "hero.buttons.secondary.link": "/en/portfolio"
+}

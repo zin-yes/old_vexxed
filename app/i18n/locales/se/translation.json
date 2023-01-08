@@ -1,0 +1,27 @@
+{
+    "hero.navigation.items.home": "hem",
+
+    
+    "hero.navigation.items.about.content": "om oss",
+    "hero.navigation.items.services.content": "våra tjänster",
+    "hero.navigation.items.portfolio.content": "portfolio",
+    "hero.navigation.items.contact.content": "kontakta oss",
+
+    "hero.navigation.items.about.link": "/se/om-oss",
+    "hero.navigation.items.services.link": "/se/vara-tjanster",
+    "hero.navigation.items.portfolio.link": "/se/portfolio",
+    "hero.navigation.items.contact.link": "/se/kontakta-oss",
+
+
+    "hero.header.content": "Högkvalitativ webbutveckling och design i Linköping",
+    "hero.header.highlight.development": "1",
+    "hero.header.highlight.design": "3",
+    "hero.description": "Vi hjälper andra att skapa ett starkt varumärke och nå nya höjder online. Maximera eran närvaro online med en modern webbplats.",
+
+
+    "hero.buttons.primary.content": "Boka ett möte",
+    "hero.buttons.secondary.content": "Se våra verk",
+
+    "hero.buttons.primary.link": "https://calendly.com/vexxed-digital/conversation",
+    "hero.buttons.secondary.link": "/se/portfolio"
+}
