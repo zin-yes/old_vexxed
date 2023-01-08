@@ -8,6 +8,7 @@
 
 import { useTranslation } from '../i18n'
 
+// Just creating this comment so I can try deploying to Vercel again since it did not work for the previous commit.
 export default async function Head({ params: { language } }) 
 {
     const { t } = await useTranslation(language);
