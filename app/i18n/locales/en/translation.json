@@ -1,4 +1,11 @@
 {
+    "page.title": "A web development and design agency in Sweden | VEXXED",
+    "page.keywords": "Website, Web Development, Web Design, Web Dev, Agency, Web Agency, Web Dev Agency, Digital Agency, Digital Services, Online Presence Agency, Conversion Optimization, Website Builder, Linköping, Östergötland, Sweden, Law Firms, Dentists, Professional, Professionals, Expert, Experts, Doctors, Clinic, Lawyer, Attorney",
+    "page.revised": "Sunday, January 8, 2023",
+    "page.description": "We are a duo of young and talented coders and artists that specialize in crafting beautiful websites and designs. We are based in Sweden; do not hesitate to contact us if are looking for experts to strengthen your brand and your online presence.",
+    "page.author": "VEXXED",
+
+
     "hero.navigation.items.home": "home",
 
     
@@ -13,7 +20,7 @@
     "hero.navigation.items.contact.link": "/en/contact",
 
 
-    "hero.header.content": "High-quality web development and design in Linköping",
+    "hero.header.content": "High-quality web development and design in Sweden",
     "hero.header.highlight.development": "2",
     "hero.header.highlight.design": "4",
     "hero.description": "We help others create a strong brand and reach new heights online. Maximize your online presence with a modern website.",

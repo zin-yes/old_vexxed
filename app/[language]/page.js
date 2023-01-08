@@ -10,27 +10,27 @@ function getHeroContent(t)
         {
             items:
             {
-                home: "" + t("hero.navigation.items.home"),
-                about: "" + t("hero.navigation.items.about.content"),
-                services: "" + t("hero.navigation.items.services.content"),
-                portfolio: "" + t("hero.navigation.items.portfolio.content"),
-                contact: "" + t("hero.navigation.items.contact.content"),
+                home: `${t("hero.navigation.items.home")}`,
+                about: `${t("hero.navigation.items.about.content")}`,
+                services: `${t("hero.navigation.items.services.content")}`,
+                portfolio: `${t("hero.navigation.items.portfolio.content")}`,
+                contact: `${t("hero.navigation.items.contact.content")}`,
             }
         },
         header:
         {
-            content: "" + t("hero.header.content"),
+            content: `${t("hero.header.content")}`,
             highlight:
             {
-                development: "" + t("hero.header.highlight.development"),
-                design: "" + t("hero.header.highlight.design"),
+                development: `${t("hero.header.highlight.development")}`,
+                design: `${t("hero.header.highlight.design")}`,
             } 
         },
-        description: "" + t("hero.description"),
+        description: `${t("hero.description")}`,
         buttons:
         {
-            primary: "" + t("hero.buttons.primary.content"),
-            secondary: "" + t("hero.buttons.secondary.content")
+            primary: `${t("hero.buttons.primary.content")}`,
+            secondary: `${t("hero.buttons.secondary.content")}`
         }
     };
 
@@ -45,17 +45,17 @@ function getHeroLinks(t)
         {
             items:
             {
-                home: "" + t("hero.navigation.items.home.link"),
-                about: "" + t("hero.navigation.items.about.link"),
-                services: "" + t("hero.navigation.items.services.link"),
-                portfolio: "" + t("hero.navigation.items.portfolio.link"),
-                contact: "" + t("hero.navigation.items.contact.link"),
+                home: `${t("hero.navigation.items.home.link")}`,
+                about: `${t("hero.navigation.items.about.link")}`,
+                services: `${t("hero.navigation.items.services.link")}`,
+                portfolio: `${t("hero.navigation.items.portfolio.link")}`,
+                contact: `${t("hero.navigation.items.contact.link")}`,
             }
         },
         buttons:
         {
-            primary: "" + t("hero.buttons.primary.link"),
-            secondary: "" + t("hero.buttons.secondary.link")
+            primary: `${t("hero.buttons.primary.link")}`,
+            secondary: `${t("hero.buttons.secondary.link")}`
         }
     };
 
