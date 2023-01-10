@@ -1,9 +1,6 @@
 import HeroSection from './(sections)/hero'
-import ServicesSection from './(sections)/services/services'
 
 import { useTranslation } from '../i18n'
-
-import styles from './page.module.css'
 
 function getHeroContent(t)
 {
@@ -69,17 +66,13 @@ export default async function LandingPage({ params: { language } })
 {
     const { t } = await useTranslation(language);
 
-    return <main className={styles.container}>
+    return <main>
         {
             t &&
             <HeroSection  
                 content={getHeroContent(t)}
                 links={getHeroLinks(t)}
             />
-        }
-        {
-            t &&
-            <ServicesSection />
         }
     </main>
 }

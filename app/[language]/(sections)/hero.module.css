@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
-.container
+.heroContainer
 {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -132,13 +133,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.hero > header
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .hero > *
 {
@@ -174,7 +168,7 @@
     transition: 1s transform;
 }
 
-.header_text_content
+.hero > header
 {
     width: calc(100vw / 3);
     height: 50vh;
@@ -183,14 +177,14 @@
     justify-content: space-between;
 }
 
-.header_text_content > div > h1
+.hero > header > div > h1
 {
     font-size: 65px;
     font-weight: 800;
     font-family: "Josefin Sans";
 }
 
-.header_text_content > div > p
+.hero > header > div > p
 {
     padding-top: 20px;
     font-size: 25px;
@@ -198,7 +192,7 @@
     font-family: "Inter";
 }
 
-.header_text_content > div:has(button)
+.hero > header > div:has(button)
 {
     width: calc(100vw / 3);
     display: flex;
