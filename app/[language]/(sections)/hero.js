@@ -5,7 +5,7 @@ import styles from './hero.module.css';
 
 export default function HeroSection({ content, links })
 {
-    return <div className={styles.heroContainer}>
+    return <div className={styles.container}>
         <div className={styles.gradientTopLeft} />
             <section className={styles.hero}>
                 <navigation>
@@ -37,23 +37,34 @@ export default function HeroSection({ content, links })
                     </Link>
                 </navigation>
                 <header>
-                    <div>
-                        <h1>
-                            { 
-                                content.header.content.split(" ").map((word) => {
-                                    return word + " ";
-                                })
-                            }
-                        </h1>
-                        <p>{ content.description }</p>
+                    <div className={styles.header_text_content}>
+                        <div>
+                            <h1>
+                                { 
+                                    content.header.content.split(" ").map((word) => {
+                                        return word + " ";
+                                    })
+                                }
+                            </h1>
+                            <p>{ content.description }</p>
+                        </div>
+                        <div>
+                            <Link href={`${links.buttons.primary}`} target={"_blank"}>
+                                <button className={styles.primaryCTA}>{ content.buttons.primary }</button>
+                            </Link>
+                            <Link href={`${links.buttons.secondary}`}>
+                                <button className={styles.secondaryCTA}>{ content.buttons.secondary }</button>
+                            </Link>
+                        </div>
                     </div>
-                    <div>
-                        <Link href={`${links.buttons.primary}`} target={"_blank"}>
-                            <button className={styles.primaryCTA}>{ content.buttons.primary }</button>
-                        </Link>
-                        <Link href={`${links.buttons.secondary}`}>
-                            <button className={styles.secondaryCTA}>{ content.buttons.secondary }</button>
-                        </Link>
+                    <div className={styles.header_desktop_illustration}>
+                        <Image
+                            src={"/desktop-illustration-dark.svg"}
+                            alt={"An illustration of seperate layers of a website design."}
+                            width={760}
+                            height={520}
+                            loading={"eager"}
+                        />
                     </div>
                 </header>
                 <div className={styles.indicator}>
