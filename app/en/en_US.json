@@ -1,0 +1,72 @@
+{
+    "page":
+    {
+        "title": "A web development and design agency in Sweden | VEXXED",
+        "description": "We are a duo of young and talented coders and artists that specialize in crafting beautiful websites and designs. We are based in Sweden; do not hesitate to contact us if are looking for experts to strengthen your brand and your online presence.",
+        "author": "VEXXED",
+        "revised": "Sunday, January 8, 2023",
+        "keywords": "website development, web dev, web design, web agency, digital agency, marketing, design, Linköping, Sweden, Östergötland",
+        "icon_url": "/icon.svg"
+    },
+    "modules":
+    {
+        "down_arrow":
+        {
+            "alt": "A down arrow indicating that there is more content in the section below.",
+            "url": "/down-arrow.svg"
+        }
+    },
+    "sections":
+    {
+        "nav":
+        {
+            "logo":
+            {
+                "alt": "The VEXXED logo.",
+                "url": "/logo.svg"
+            },
+            "items": 
+            [
+                {
+                    "name": "home",
+                    "url": "/en"
+                },
+                {
+                    "name": "about us",
+                    "url": "/en/about-us"
+                },
+                {
+                    "name": "contact us",
+                    "url": "/en/contact-us"
+                }
+            ]
+        },
+        "hero":
+        {
+            "header":
+            {
+                "title": "High-quality web development and design in Sweden",
+                "description": "We help others create a strong brand and reach new heights online. Maximize your online presence with a modern website.",
+                "highlights": [2, 4],
+                "illustration": 
+                {
+                    "alt": "An illustration of a multi-layer silhouette of a web page design.",
+                    "url": "/illustration.svg"
+                }
+            },
+            "buttons": 
+            {
+                "primary":
+                {
+                    "name": "BOOK A MEETING",
+                    "url": "https://calendly.com/vexxed-digital/conversation"
+                },
+                "secondary":
+                {
+                    "name": "VIEW OUR WORK",
+                    "url": ""
+                }
+            }
+        }
+    }
+}
