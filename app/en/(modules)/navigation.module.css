@@ -9,11 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container > * > * 
-{
-    outline: 1px solid black;
+    z-index: 3;
 }
 
 .container > nav
