@@ -13,8 +13,11 @@
     "accept-language": "^3.0.18",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "framer-motion": "^8.4.3",
     "next": "13.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.1",
+    "resize-observer-polyfill": "^1.5.1"
   }
 }

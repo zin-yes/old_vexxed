@@ -1,11 +1,17 @@
 import './globals.css'
 
+import SmoothScroll from './en/(components)/smooth-scroll'
+
 export default function RootLayout({ children }) 
 {
     return (
-        <html>
+        <html lang="en" dir="ltr">
             <head />
-            <body>{children}</body>
+            <body>
+                <SmoothScroll>
+                    {children}
+                </SmoothScroll>
+            </body>
         </html>
     )
 }

@@ -1,5 +1,11 @@
 .container
 {
     width: 100vw;
-    overflow: hidden;
+}
+
+.secondary_background
+{
+    width: 100vw;
+    height: 200vh;
+    background: var(--secondary);
 }

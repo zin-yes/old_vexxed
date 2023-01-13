@@ -15,13 +15,13 @@
 .link_symbol
 {
     transition: 0.5s transform;
-    transform: rotateZ(45deg);
+    transform: rotateZ(0);
 }
 
 .container > div:hover > div > .link_symbol
 {
     transition: 0.5s transform;
-    transform: rotateZ(0);
+    transform: rotateZ(45deg);
 }
 
 .container > div

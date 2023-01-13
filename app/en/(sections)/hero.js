@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import DownArrow from '../(modules)/down-arrow'
+import DownArrow from '../(components)/down-arrow'
 
 import styles from './hero.module.css'
 
 import en_US from '../en_US.json'
+import Nav from '../(modules)/nav'
 
 export default function HeroSection()
 {
     return <div className={styles.container}>
         <div>
-            <div className={styles.nav_spacer} />
+            <Nav />
             <header>
                 <div>
                     <h1>
@@ -50,7 +51,7 @@ export default function HeroSection()
                     />
                 </div>
             </header>
-            <DownArrow to={"#services_section"} />
+            <DownArrow />
         </div>
     </div>
 }

@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
+
+*,
+*:before,
+*:after 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root
 {
     --primary: linear-gradient(#FFD4FA, #FFFFFF);
-    --secondary: linear-gradient(#6100FF, #EB00FF);
+    --secondary: linear-gradient(-90deg, #6100FF, #EB00FF);
     scroll-behavior: smooth;
 }
 
@@ -13,6 +23,14 @@ body, html
     margin: 0;
     padding: 0;
     background: var(--primary);
+
+    overscroll-behavior-y: none;
+    user-select: none;
+    background-color: whitesmoke;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a
@@ -31,9 +49,17 @@ h1
     font-size: 65px;
 }
 
+h3
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+
 p
 {
     font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
 }
 
 ::-webkit-scrollbar
@@ -47,4 +73,32 @@ p
     color: white;
     background: black;
     -webkit-text-fill-color: white;
+}
+
+
+a:has(span)
+{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+a:has(span)::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+  
+a:has(span):hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

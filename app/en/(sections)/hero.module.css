@@ -51,13 +51,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-.container > div > header > div > p
-{
-    font-family: "Inter", sans-serif;
-    font-size: 25px;
-    font-weight: 200;
-}
-
 .buttons
 {
     display: flex;

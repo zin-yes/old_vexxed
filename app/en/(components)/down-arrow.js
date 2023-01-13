@@ -4,9 +4,9 @@ import styles from './down-arrow.module.css'
 
 import en_US from '../en_US.json'
 
-export default function DownArrow({ to })
+export default function DownArrow()
 {
-    return <a href={`${to}`} scroll="smooth">
+    return <a>
         <div className={styles.container}>
             <Image 
                 alt={en_US.modules.down_arrow.alt}

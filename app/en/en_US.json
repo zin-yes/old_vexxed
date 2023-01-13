@@ -143,6 +143,16 @@
                     }
                 }
             ]
+        },
+        "targetting":
+        {
+            "header":
+            {
+                "title": "Is VEXXED for you?",
+                "highlights": [1],
+                "subtitle": "WHAT WE DO BEST",
+                "description": ["Do you own a small business and/or work as a solo entrepreneur? Well, then we are 100% the right ones to help you!", "We specialize in helping professionals and small business owners that are looking for a cheap, reliable, and beautifully designed website."]
+            }
         }
     }
 }
