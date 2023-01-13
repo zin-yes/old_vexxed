@@ -1,0 +1,35 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background: var(--secondary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 650px;
+    text-align: center;
+}
+
+.container > header > h3
+{
+    opacity: 0.7;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

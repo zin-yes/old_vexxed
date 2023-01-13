@@ -63,10 +63,86 @@
                 },
                 "secondary":
                 {
-                    "name": "VIEW OUR WORK",
-                    "url": ""
+                    "name": "VIEW SHOWREEL",
+                    "url": "/en/show-reel"
                 }
             }
+        },
+        "services":
+        {
+            "header":
+            {
+                "title": "With us you get the complete package",
+                "subtitle": "WHAT WE OFFER"
+            },
+            "cards":
+            [
+                {
+                    "title": "Free Design Sketches",
+                    "symbol":
+                    {
+                        "alt": "A brush symbolizing sketching a website deisgn.",
+                        "url": "/brush.svg"
+                    },
+                    "link_symbol":
+                    {
+                        "alt": "An arrow pointing to the top right that will rotate to the right, symbolizing a linked element on the page.",
+                        "url": "/link-arrow.svg"
+                    }
+                },
+                {
+                    "title": "Website Design and Development",
+                    "symbol":
+                    {
+                        "alt": "A globe symbolizing a website, used as a pictogram for web design and development.",
+                        "url": "/globe.svg"
+                    },
+                    "link_symbol":
+                    {
+                        "alt": "An arrow pointing to the top right that will rotate to the right, symbolizing a linked element on the page.",
+                        "url": "/link-arrow.svg"
+                    }
+                },
+                {
+                    "title": "Conversion Optimization",
+                    "symbol":
+                    {
+                        "alt": "A graph showing a trend upwards, indicating more conversions on a website.",
+                        "url": "/stonks.svg"
+                    },
+                    "link_symbol":
+                    {
+                        "alt": "An arrow pointing to the top right that will rotate to the right, symbolizing a linked element on the page.",
+                        "url": "/link-arrow.svg"
+                    }
+                },
+                {
+                    "title": "24/7 Server Maintenance",
+                    "symbol":
+                    {
+                        "alt": "A clock indicating 24/7 server maintenance.",
+                        "url": "clock.svg"
+                    },
+                    "link_symbol":
+                    {
+                        "alt": "An arrow pointing to the top right that will rotate to the right, symbolizing a linked element on the page.",
+                        "url": "/link-arrow.svg"
+                    }
+                },
+                {
+                    "title": "Search Engine Optimization",
+                    "symbol":
+                    {
+                        "alt": "A magnifiying glass and a graph trending upwards symbolzing search engine optimization.",
+                        "url": "search-stonks.svg"
+                    },
+                    "link_symbol":
+                    {
+                        "alt": "An arrow pointing to the top right that will rotate to the right, symbolizing a linked element on the page.",
+                        "url": "/link-arrow.svg"
+                    }
+                }
+            ]
         }
     }
 }

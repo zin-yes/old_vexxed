@@ -1,0 +1,65 @@
+.container 
+{
+    position: relative;
+    isolation: isolate;
+    perspective: 600px;
+    transition-property: transform;
+    will-change: transform;
+    margin: 0 25px;
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+}
+
+
+.link_symbol
+{
+    transition: 0.5s transform;
+    transform: rotateZ(45deg);
+}
+
+.container > div:hover > div > .link_symbol
+{
+    transition: 0.5s transform;
+    transform: rotateZ(0);
+}
+
+.container > div
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    will-change: transform;
+    transform-origin: center center;
+    transform: rotateY(var(--r-x)) rotateX(var(--r-y));
+    background: var(--primary);
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(256, 256, 256, 0.3);
+    border-image: initial;
+}
+
+.container > div > div > h4
+{
+    background: var(--secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 25px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container > div > div:has(img)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.container > div:hover
+{
+    transition: 0 transform;
+}

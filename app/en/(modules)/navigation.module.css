@@ -1,0 +1,40 @@
+.container
+{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > * > * 
+{
+    outline: 1px solid black;
+}
+
+.container > nav
+{
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container > nav > a
+{
+    margin-left: 100px;
+}
+
+.container > nav > a > span
+{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    font-family: "Josefin Sans", sans-serif;
+}

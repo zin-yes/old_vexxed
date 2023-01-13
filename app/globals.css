@@ -1,24 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
 
 :root
 {
-    --background: linear-gradient(#FFD4FA, #FFFFFF);
-    --foreground-color: linear-gradien(#6100FF, #EB00FF);
+    --primary: linear-gradient(#FFD4FA, #FFFFFF);
+    --secondary: linear-gradient(#6100FF, #EB00FF);
+    scroll-behavior: smooth;
 }
 
 body, html
 {
     margin: 0;
     padding: 0;
+    background: var(--primary);
+}
+
+a
+{
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, span, button
 {
     font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+h1
+{
+    font-size: 65px;
 }
 
 p
 {
     font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+*::selection
+{
+    color: white;
+    background: black;
+    -webkit-text-fill-color: white;
 }
