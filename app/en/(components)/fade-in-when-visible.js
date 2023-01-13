@@ -42,6 +42,7 @@ export default function FadeInWhenVisible({ children })
         initial={"offscreen"}
         whileInView={"onscreen"}
         variants={fade_variants}
+        viewport={{ once: true }}
       >
         {children}
       </motion.div>
