@@ -1,0 +1,132 @@
+.root
+{
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    height: 18vh;
+    background: none;
+    visibility: hidden;
+}
+
+.container
+{
+    position: relative;
+    visibility: visible;
+    background: var(--pink-gradient-nav);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_content
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.logo
+{
+    width: 8vw;
+    height: 2.4vw;
+    background: url("/logo_light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.items > *
+{
+    
+    margin-left: 150px;
+}
+
+.item
+{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: black;
+}
+
+.item:hover
+{
+    text-decoration: underline !important;
+}
+
+.hamburger
+{
+    z-index: 4;
+    width: 4vh;
+    height: 4vh;
+    background: url("/hamburger_menu_light.svg");
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    margin-right: 10vw;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+@media (orientation: portrait)
+{
+    .root, .container
+    {
+        height: 10vh !important;
+    }
+
+    .items
+    {
+        display: none;
+    }
+
+    .hamburger
+    {
+        visibility: visible;
+    }
+
+    .logo
+    {
+        width: 15vh;
+        height: calc(15vh / 3);
+    }
+}
+
+@media (prefers-color-scheme: dark)
+{
+    .hamburger
+    {
+        background: url("/hamburger_menu_dark.svg");
+    }
+    .item
+    {
+        font-size: 1.4em;
+        font-weight: 300;
+        color: white;
+    }
+
+    .container
+    {
+        background: var(--dark-purple-gradient-nav);
+    }
+
+    .logo
+    {
+        background: url("/logo_dark.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+}

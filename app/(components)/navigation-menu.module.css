@@ -1,0 +1,19 @@
+.container
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    background: var(--pink-gradient);
+    z-index: 3;
+}
+
+@media (prefers-color-scheme: dark)
+{
+    .container
+    {
+        background: black;
+    }
+}
