@@ -1,0 +1,71 @@
+.primary_button, .secondary_button
+{
+    width: 22.5em;
+    height: 5em;
+    border: 0;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+
+.primary_button
+{
+    background: var(--purple-gradient);
+    color: white;
+}
+
+.secondary_button
+{
+    position: relative;
+    background: none;
+    outline: 1.5px solid black;
+    outline-offset: -1.5px;
+    overflow: hidden;
+    transition: 1s;
+    color: black; 
+}
+
+.secondary_button:after
+{
+    position: absolute;
+    left: -22.5em;
+    top: 0;
+    background: black;
+    z-index: -1;
+    content: "";
+    width: 22.5em;
+    height: 5em;
+    transition: 1s;
+}
+
+.secondary_button:hover:after
+{
+    left: 0;
+    transition: 1s;
+}
+
+.secondary_button:hover
+{
+    color: white;
+    transition: 1s;
+}
+
+@media (prefers-color-scheme: dark)
+{
+    .secondary_button
+    {
+        outline-color: white;
+        color: white;
+    }
+
+    .secondary_button:hover
+    {
+        color: black;
+    }
+
+    .secondary_button:after
+    {
+        background: white;
+    }
+
+}
