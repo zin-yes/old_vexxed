@@ -136,13 +136,13 @@ export default function About()
             setTheme(event.matches ? "dark" : "light");
         });
     }, [])
-    
+
     const vexxed_title = 
     {
         title: "Vi är VEXXED",
         highlight: [2]
     }
-    const vexxed_description = ["Vi är en duo bestående av en ung och talangfull kodare samt en kreativ konstnär som är specialiserade på att skapa vackra, pålitliga och användarvänliga hemsidor.", "Vi är baserade i Linköping och är fokuserade på att hjälpa lokala småföretag, så tveka inte att ta kontakt med oss om du vill ta ditt företag till nästa nivå genom stärka varumärket och onlinenärvaron."];
+    const vexxed_description = ["Vi är en duo bestående av en ung och talangfull kodare samt en kreativ konstnär som är specialiserad på att skapa vackra, pålitliga och användarvänliga hemsidor.", "Vi är baserade i Linköping och är fokuserade på att hjälpa lokala småföretag, så tveka inte att ta kontakt med oss om du vill ta ditt företag till nästa nivå genom att stärka varumärket och onlinenärvaron."];
 
     const zin_title =
     {
