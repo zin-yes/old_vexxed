@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
 
-/* Debugging remove later */
-*
-{
-    outline: 1px solid rgba(0, 255, 0, 0.5);
-    outline-offset: -1px;
-}
-
-
 :root 
 {
     --purple-gradient: linear-gradient(45deg, #6100FF, #EB00FF);
     --pink-gradient: linear-gradient(#FFD4FA, #FFFFFF);
+    --pink-gradient-footer: linear-gradient(#FFFFFF, #FFD4FA);
     --dark-purple-gradient: linear-gradient(180deg, #220034 0%, #000000 37.5%);
     --pink-gradient-nav: linear-gradient(#FFD4FA, #ffffff00);
     --dark-purple-gradient-nav: linear-gradient(180deg, #220034, #00000000);
+    --gradient-nav: linear-gradient(180deg, #A800FF, #A800FF00);
+    --dark-gradient-nav: linear-gradient(180deg, #220034, #00000000);
 }
 
 *
 {
     font-family: "Josefin Sans", sans-serif;
     box-sizing: border-box;
-    text-decoration: none !important;
+    text-decoration: none;
     margin: 0;
     padding: 0;
 }
@@ -93,6 +88,19 @@ button
     color: black;
     font-weight: 300;
     font-size: 25px;
+}
+
+.link_active
+{
+    text-decoration: underline !important;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+h4
+{
+    padding-bottom: 2vh;
 }
 
 @media (max-width: 1280px) and (max-height: 800px)
@@ -173,5 +181,49 @@ button
     button
     {
         font-size: 0.7em;
+    }
+}
+
+.scroller
+{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: calc(180px + 4vh);
+    padding: 1vh 5vw;
+}
+
+.scroller > img
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.scroller::-webkit-scrollbar
+{
+    display: block;
+    height: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+    background: white;
+    border-radius: 2em;
+    display: block;
+    opacity: 0;
+}
+
+@media (orientation: portrait)
+{
+    
+    .scroller
+    {
+        width: calc(100vw);
+        padding: 1vh 5vw;
+    }
+    .scroller > img
+    {
+        height: 80%;
     }
 }

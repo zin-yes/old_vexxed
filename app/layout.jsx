@@ -1,6 +1,6 @@
 import Navigation from './(components)/navigation'
-
 import './globals.css'
+
 
 export default function RootLayout({ children }) {
   const nav_items =
@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="sv">
       <head />
       <body>
-        <Navigation items={nav_items}/>
-        {children}
+          <Navigation items={nav_items}/>
+          { children }
       </body>
     </html>
   )

@@ -12,7 +12,6 @@
 {
     position: relative;
     visibility: visible;
-    background: var(--pink-gradient-nav);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,6 +37,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    transition: 0.7s filter;
 }
 
 .items
@@ -46,6 +46,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    transition: 0.7s filter;
 }
 
 .items > *
@@ -68,6 +69,7 @@
 
 .hamburger
 {
+    transition: 0.7s filter;
     width: 4vh;
     height: 4vh;
     background: url("/hamburger_menu_light.svg");
@@ -115,12 +117,6 @@
         font-weight: 300;
         color: white;
     }
-
-    .container
-    {
-        background: var(--dark-purple-gradient-nav);
-    }
-
     .logo
     {
         background: url("/logo_dark.svg");

@@ -9,6 +9,7 @@
     background: var(--purple-gradient);
     z-index: 3;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .hamburger
@@ -50,6 +51,21 @@
     visibility: visible !important;
 }
 
+@media (prefers-color-scheme: light)
+{
+    .buttons > :first-child > button
+    {
+        background: white;
+        color: #A800FF;
+    }
+
+    .buttons > :last-child > button
+    {
+        color: white;
+        outline-color: white;
+    }
+}
+
 @media (max-width: 1280px) and (max-height: 720px), (orientation: portrait)
 {
     .logo
@@ -61,6 +77,7 @@
 
 @media (prefers-color-scheme: dark)
 {
+
     .hamburger
     {
         background: url("/hamburger_menu_open_dark.svg");
@@ -78,4 +95,53 @@
         background-position: center center;
         background-size: 100% 100%;
     }
+}
+
+.buttons
+{
+    padding-bottom: 5vh;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons > div
+{
+    height: 5.5vh;
+    width: 90vw;
+}
+
+
+
+.contact_info, .page_links
+{
+    filter: invert();
+    width: 100%;
+    position: absolute;
+    bottom: 25vh;
+}
+
+.page_links
+{
+    top: 10vh;
+}
+
+.contact_info > li, .page_links > li
+{
+    list-style-type: none;
+    padding: 7.5px 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact_info > li > :not(img), .page_links > li > :not(img)
+{
+    padding-left: 15px;
 }

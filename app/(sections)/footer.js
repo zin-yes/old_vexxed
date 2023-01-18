@@ -11,7 +11,7 @@ const FooterHeader = ({ title, description, primary }) =>
 {
     return <div className={styles.footer_header}>
             <div className={styles.footer_header_text}>
-                <h1>{ title }</h1>
+                <h2>{ title }</h2>
                 <p>
                     {
                         description.map((item, index) =>
@@ -158,9 +158,6 @@ export default function Footer()
                     description={description}
                     primary={primary}
                 />
-                <div className={styles.footer_links_container}>
-                    <FooterLinksLandscape />
-                </div>
                 <FooterPortraitButtons 
                     primary={primary} 
                 />

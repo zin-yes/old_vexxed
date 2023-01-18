@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 import Section from '../(components)/section.js'
 import AnimatedTextAbout from '../(components)/animated-text-about.js'
@@ -8,9 +10,9 @@ import Footer from '../(sections)/footer.js'
 
 import styles from './page.module.css'
 
-const AboutContainer = ({ children }) =>
+const AboutContainer = ({ children, background }) =>
 {
-    return <div className={styles.about_container}>
+    return <div className={styles.about_container} style={{background: background}}>
             <div className={styles.about_container_spacer}>
                 <div className={styles.about_spacer_top}/>
                 <div className={styles.about_container_content}>{ children }</div>
@@ -124,6 +126,11 @@ const AboutDownArrow = ({}) =>
 
 export default function About()
 {
+    const [theme, setTheme] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        setTheme(event.matches ? "dark" : "light");
+    });
     const vexxed_title = 
     {
         title: "Vi är VEXXED",
@@ -147,10 +154,10 @@ export default function About()
     }
     let ida_description = ["Hejsan, jag är ida! Jag är konstnären här i stan och skapar målningarna häromkring. Jag siktar på att skapa visuellt tilltalande konst, men aldrig utan spår av personlighet.","Målat har jag gjort så länge jag kan minnas -  digitalt i fem år och professionellt i tre. Att måla betyder allt för mig och att göra det åt andra ger mig syfte."];
 
-    return <main>
+    return <main style={{background: theme === "dark" ? "none" : "var(--pink-gradient)"}}>
             <SectionContainer>
                 <Section>
-                    <AboutContainer>
+                    <AboutContainer background={theme === "dark" ? "var(--dark-purple-gradient)": "none"}>
                         <AboutVexxedIllustration />
                         <RightAlignedAboutHeader 
                             title={vexxed_title}
@@ -159,7 +166,7 @@ export default function About()
                     </AboutContainer>
                 </Section>
                 <Section>
-                    <AboutContainer>
+                    <AboutContainer  background={theme === "dark" ? "black": "none"}>
                         <LeftAlignedAboutHeader
                             title={zin_title}
                             description={zin_description} 
@@ -168,7 +175,7 @@ export default function About()
                     </AboutContainer>
                 </Section>
                 <Section>
-                    <AboutContainer>
+                    <AboutContainer  background={theme === "dark" ? "black": "none"}>
                         <AboutIdaIllustration />
                         <RightAlignedAboutHeader
                             title={ida_title}

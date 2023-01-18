@@ -3,13 +3,14 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .about_down_arrow_container
 {
+    filter: invert();
     margin-top: 20px;
     width: 100%;
     height: 25px;
@@ -29,9 +30,9 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .about_spacer_top, 
@@ -41,21 +42,15 @@
     height: 10vh !important;
 }
 
-.about_header > *
-{
-    text-align: right;
-    padding-left: 10%;
-}
-
 .about_header_left_aligned > *
 {
-    text-align: left;
-    padding-right: 10%;
+    text-align: center;
 }
 
 .about_container
 {
-    background: var(--pink-gradient);
+    background: none;
+    color: white;
 }
 
 .about_illustration_container
@@ -95,7 +90,7 @@
 
 .about_header, .about_header_left_aligned
 {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -111,6 +106,11 @@
 
 @media (prefers-color-scheme: dark)
 {
+    .about_down_arrow_container
+    {
+        filter: none;
+    }
+
     .about_illustration_container
     {
         background: var(--purple-gradient);
@@ -121,6 +121,64 @@
         background: black;
     }
 }
+
+
+.scroller
+{
+    overflow-x: scroll;
+    padding: 0 10vw;
+    overflow-y: hidden;
+    width: 100vw;
+    align-items: center;
+}
+
+
+.scroller > img
+{
+    height: 100%;
+}
+
+.scroller::-webkit-scrollbar
+{
+    display: block;
+    height: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+    background: white;
+    border-radius: 2em;
+    display: block;
+    opacity: 0;
+}
+
+@media (min-width: 1400px)
+{
+    .scroller
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    .scroller
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .scroller > img
+    {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
 
 @media (orientation: portrait)
 {
@@ -152,13 +210,13 @@
     {
         padding-left: 0;
         padding-bottom: 10%;
-        text-align: left;
+        text-align: center;
     }
 
     .about_header_text_left_aligned > h1
     {
         padding-bottom: 10%;
-        text-align: left;
+        text-align: center;
     }
 
     .about_header_text
