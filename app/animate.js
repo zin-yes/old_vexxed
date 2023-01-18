@@ -15,17 +15,20 @@ export default function Animate({ children })
             <motion.div
                 initial={{
                     opacity: 0,
-                    x: -outerWidth/10
+                    x: "-10vw"
                 }}
                 animate={{
                     opacity: 1,
                     x: 0
                 }}
                 exit={{
+                    opacity: 0,
+                    x: "-10vw"
                 }}
                 transition={{
                     type: "easeInOut",
-                    duration: 0.3
+                    duration: 0.3,
+                    delay: 0.5
                 }}
             >
                 { children }

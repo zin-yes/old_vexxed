@@ -63,10 +63,14 @@ const Buttons = () =>
 {
     return <div className={styles.buttons}>
             <div>
-                <PrimaryButton title={"BOKA ETT MÖTE"}/>
+                <Link href={"https://calendly.com/vexxed-digital/conversation"} target={"_blank"}>
+                    <PrimaryButton title={"BOKA ETT MÖTE"}/>
+                </Link>
             </div>
             <div>
-                <SecondaryButton title={"GRATIS DESIGNPROTOTYP"}/>
+                <Link href={"mailto:prototyp@vexxed.se"}>
+                    <SecondaryButton title={"GRATIS DESIGNPROTOTYP"}/>
+                </Link>
             </div>
         </div>
 }

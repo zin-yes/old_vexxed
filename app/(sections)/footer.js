@@ -38,7 +38,7 @@ const FooterHeader = ({ title, description, primary }) =>
 const FooterPortraitButtons = ({ primary }) =>
 {
     return <div className={styles.button_portrait}>
-            <Link href={primary.url}>
+            <Link href={primary.url} target={"_blank"}>
                 <PrimaryButton title={primary.title}/>
             </Link>
         </div>
@@ -65,7 +65,7 @@ const FooterLinksPortrait = () =>
                     width={30}
                     height={30}
                 />
-                <Link href={"mailto:hej@vexxed.se"}>
+                <Link href={"https://www.google.com/maps/place/Link%C3%B6ping"} target={"_blank"}>
                     <span className="link">Linköping</span>
                 </Link>
             </li>
@@ -115,7 +115,7 @@ const FooterLinksLandscape = () =>
                     width={30}
                     height={30}
                 />
-                <Link href={"mailto:hej@vexxed.se"}>
+                <Link href={"https://www.google.com/maps/place/Link%C3%B6ping"} target={"_blank"}>
                     <span className="link">Linköping</span>
                 </Link>
             </li>
