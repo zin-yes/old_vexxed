@@ -100,19 +100,21 @@ export default function Hero()
     const primary = { url: "https://calendly.com/vexxed-digital/conversation", title: "BOKA ETT MÖTE"};
     const secondary = { url: "mailto:prototyp@vexxed.se", title: "GRATIS DESIGNPROTOTYP" };
 
-    return <Section>
-            <HeroContainer>
-                <HeroHeader 
-                    title={title}
-                    description={description} 
-                    primary={primary} 
-                    secondary={secondary}
-                />
-                <HeroIllustration />
-                <HeroButtonsPortrait
-                    primary={primary} 
-                    secondary={secondary}
-                />
-            </HeroContainer>
-        </Section>
+    return <main>
+            <Section>
+                <HeroContainer>
+                    <HeroHeader 
+                        title={title}
+                        description={description} 
+                        primary={primary} 
+                        secondary={secondary}
+                    />
+                    <HeroIllustration />
+                    <HeroButtonsPortrait
+                        primary={primary} 
+                        secondary={secondary}
+                    />
+                </HeroContainer>
+            </Section>
+        </main>
 }

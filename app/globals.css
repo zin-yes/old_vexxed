@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap');
 
 /* Debugging remove later */
@@ -65,6 +65,11 @@
     }
 }
 
+h4
+{
+    font-weight: 600;
+}
+
 h1
 {
     font-weight: 700;
@@ -77,6 +82,19 @@ p
     font-weight: 300;
 }
 
+button
+{
+    font-size: 1em;
+}
+
+.link
+{
+    text-decoration: underline !important;
+    color: black;
+    font-weight: 300;
+    font-size: 25px;
+}
+
 @media (max-width: 1280px) and (max-height: 800px)
 {
     h1
@@ -87,8 +105,13 @@ p
 
     p
     {
-        font-size: 1.5em;
+        font-size: 1.65em;
         font-weight: 300;
+    }
+
+    button
+    {
+        font-size: 0.7em;
     }
 }
 
@@ -103,8 +126,13 @@ p
 
     p
     {
-        font-size: 1.1em;
+        font-size: 1.15em;
         font-weight: 300;
+    }
+
+    button
+    {
+        font-size: 0.7em;
     }
 }
 
@@ -121,6 +149,11 @@ p
         font-size: 1.1em;
         font-weight: 300;
     }
+
+    button
+    {
+        font-size: 0.7em;
+    }
 }
 
 @media (max-width: 300px)
@@ -135,5 +168,10 @@ p
     {
         font-size: 1em;
         font-weight: 300;
+    }
+
+    button
+    {
+        font-size: 0.7em;
     }
 }

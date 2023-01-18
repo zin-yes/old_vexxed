@@ -65,6 +65,6 @@ export default function Navigation({ items })
                 </div>
                 <div className={styles.hamburger} onClick={() => {setRevealed(!revealed)}}/>
             </motion.div>
-            <NavigationMenu revealed={revealed}/>
+            <NavigationMenu revealed={revealed} setRevealed={setRevealed}/>
         </div>
 }

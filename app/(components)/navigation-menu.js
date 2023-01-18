@@ -4,7 +4,10 @@ import { motion } from 'framer-motion'
 
 import styles from './navigation-menu.module.css'
 
-export default function NavigationMenu({ revealed })
+import { useState } from 'react'
+import Link from 'next/link';
+
+export default function NavigationMenu({ revealed, setRevealed })
 {
     const variants =
     {
@@ -12,7 +15,6 @@ export default function NavigationMenu({ revealed })
         {
             x: "0",
             width: "100vw",
-            height: "100vh",
             transition:
             {
                 type: "easeInOut",
@@ -31,12 +33,21 @@ export default function NavigationMenu({ revealed })
         }
     };
 
-    return <motion.div
-            className={styles.container}
-            animate={revealed ? "open" : "closed"}
-            variants={variants}
-            initial={"closed"}
-        >
-            
-        </motion.div>
+    return <>
+            <div>
+                <motion.div
+                    className={styles.container}
+                    animate={revealed ? "open" : "closed"}
+                    variants={variants}
+                    initial={"closed"}
+                    >
+                    <Link href={"/"}>
+                        <div className={styles.logo_container}>
+                            <div className={styles.logo} />
+                        </div>
+                    </Link>
+                    <div className={styles.hamburger} onClick={() => {setRevealed(!revealed)}}/>
+                </motion.div>
+            </div>
+        </>
 }
