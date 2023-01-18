@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Section from '../(components)/section.js'
 import AnimatedTextServices from '../(components)/animated-text-about.js'
@@ -114,11 +114,15 @@ const ServicesDownArrow = ({}) =>
 
 export default function Services()
 {
-    const [theme, setTheme] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+    const [theme, setTheme] = useState("");
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        setTheme(event.matches ? "dark" : "light");
-    });
+    useEffect(() => {
+        setTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            setTheme(event.matches ? "dark" : "light");
+        });
+    }, [])
 
     const vexxed_title = 
     {

@@ -1,14 +1,21 @@
 'use client'
 
 import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Animate({ children })
 {
+    const [outerWidth, setOuterWidth] = useState(0);
+
+    useEffect(() => {
+        setOuterWidth(window.outerWidth);
+    }, [])
+
     return <AnimatePresence mode={"wait"}>
             <motion.div
                 initial={{
                     opacity: 0,
-                    x: -window.outerWidth/10
+                    x: -outerWidth/10
                 }}
                 animate={{
                     opacity: 1,

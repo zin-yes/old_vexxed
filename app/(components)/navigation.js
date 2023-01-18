@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from './navigation.module.css'
 
 import { useScroll, motion, useMotionValueEvent } from 'framer-motion'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavigationMenu from './navigation-menu';
 import { usePathname } from 'next/navigation';
 
@@ -14,11 +14,18 @@ export default function Navigation({ items })
     const pathname = usePathname();
     const [current_scroll_y, setCurrentScrollY] = useState(0);
     const [revealed, setRevealed] = useState(false);
-    const [theme, setTheme] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+    const [theme, setTheme] = useState("");
+    const [innerHeight, setInnerHeight] = useState("");
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        setTheme(event.matches ? "dark" : "light");
-    });
+    useEffect(() => {
+        setInnerHeight(window.innerHeight);
+
+        setTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light");
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            setTheme(event.matches ? "dark" : "light");
+        });
+    }, [])
 
     const variants =
     {
@@ -58,16 +65,16 @@ export default function Navigation({ items })
                         <div 
                             className={styles.logo}  
                             style={{filter: (theme !== "dark" ? (
-                                pathname === "/" && (current_scroll_y > window.innerHeight - 50) &&
-                                (current_scroll_y < window.innerHeight * 3)
+                                pathname === "/" && (current_scroll_y > innerHeight - 50) &&
+                                (current_scroll_y < innerHeight * 3)
                             ) ? "invert()" : "" : "")}}
                         />
                     </Link>
                     <div className={styles.items} 
                              style={{filter: (theme !== "dark" ? (
                                 pathname === "/" &&
-                                (current_scroll_y > window.innerHeight - 50) &&
-                                (current_scroll_y < window.innerHeight * 3)
+                                (current_scroll_y > innerHeight - 50) &&
+                                (current_scroll_y < innerHeight * 3)
                             ) ? "invert()" : "" : "")}}>
                         {
                             items.map((item, index) => {
@@ -84,8 +91,8 @@ export default function Navigation({ items })
                 <div className={styles.hamburger} 
                             style={{filter: (theme !== "dark" ? (
                                 pathname === "/" &&
-                                (current_scroll_y > window.innerHeight - 50) &&
-                                (current_scroll_y < window.innerHeight * 3)
+                                (current_scroll_y > innerHeight - 50) &&
+                                (current_scroll_y < innerHeight * 3)
                             ) ? "invert()" : "" : "")}} onClick={() => {setRevealed(!revealed)}}/>
             </motion.div>
             <NavigationMenu revealed={revealed} setRevealed={setRevealed}/>
