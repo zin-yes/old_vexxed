@@ -1,0 +1,48 @@
+.container
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80vw;
+  padding: 0 10vw;
+  height: 27.5vh;
+}
+
+nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.logo
+{
+  font-size: 26px;
+}
+
+.items
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.item
+{
+  margin-left: 7.6vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: calc(14px * 0.11);
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item > img
+{
+  padding-left: 5px;
+}

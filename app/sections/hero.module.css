@@ -1,0 +1,94 @@
+.container
+{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+section
+{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 57%;
+  padding-top: 5%;
+}
+
+section > div
+{
+  width: 50%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TODO: REPLACE WITH ANIMATION */
+/* TODO: ABSOLUTE POSITIONING */
+section > div:has(img)
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+section > div > img
+{
+  width: 55%;
+  padding-right: 7vw;
+}
+
+h1
+{
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h1 > span
+{
+  font-weight: 700;
+}
+
+p
+{
+  margin-top: 1.7vmax;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: calc(18px * 0.07); 
+  line-height: 134%;
+}
+
+.buttons
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons > button
+{
+  width: 42.5%;
+  height: 4.15vmax;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: calc(10px * 0.175);
+  cursor: pointer;
+  border: none;
+  border-radius: 1.75vmax;
+}
+
+.buttons > button:first-child
+{
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.buttons > button:last-child
+{
+  background: none;
+  outline: 1px solid var(--foreground);
+}
