@@ -10,9 +10,10 @@ export default function Page()
 {
   return <main className={styles.container}>
       <SectionContainer>
-        <div id="hero">
+        <div id="home">
           <Hero />
         </div>
+        <div className={styles.spacer} />
         <div id="experience">
           <Experience />
         </div>

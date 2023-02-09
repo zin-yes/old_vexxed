@@ -103,6 +103,15 @@ export default function Module({ }:
       submenu: []
     },
     {
+      title: "why us?",
+      link:
+      {
+        url: "#experience",
+        target: ""
+      },
+      submenu: []
+    },
+    {
       title: "about us",
       link:
       {
