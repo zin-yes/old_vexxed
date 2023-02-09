@@ -1,7 +1,7 @@
 import SectionContainer from './modules/section-container'
 
 import Hero from './sections/hero'
-//import About from './sections/about'
+import Experience from './sections/experience'
 
 import styles from './page.module.css'
 
@@ -12,6 +12,9 @@ export default function Page()
       <SectionContainer>
         <div id="hero">
           <Hero />
+        </div>
+        <div id="experience">
+          <Experience />
         </div>
       </SectionContainer>
     </main>

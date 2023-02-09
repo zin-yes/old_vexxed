@@ -95,6 +95,30 @@ export function Buttons({ primary, secondary }:
     </div>
 }
 
+export function Footer({ heading, subheading }:
+{
+  heading: string,
+  subheading: string    
+})
+{
+  return <div className={styles.footer}>
+      <div>
+        <h3>{ subheading }</h3>
+        <h2>
+          {
+            heading.split(" ").map((item, index) =>
+            {
+              if(item == "VEXXED")
+                return <span key={index}>{ item + " " }</span>
+          
+              return item + " ";
+            })
+          }
+        </h2>
+      </div>
+    </div>
+}
+
 export default function Section()
 {
   const header =
@@ -141,5 +165,9 @@ export default function Section()
           secondary={secondary}
         />
       </div>
+      <Footer 
+        subheading={"WHAT WE DO BEST"}
+        heading={"We at VEXXED create beautiful, reliable, and affordable web experiences for small local businesses"}
+      />
     </div>
 }
