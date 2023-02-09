@@ -1,0 +1,137 @@
+.container
+{
+  width: 100vw;
+  height: 115vh;
+
+  background: var(--background-primary); 
+
+  border-radius: 0 0 calc(32rem / 16) calc(32rem / 16);
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.2);
+}
+
+.content_container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header
+{
+  width: 35vw;
+}
+
+.mascot
+{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > header
+{
+  width: 35vw;
+}
+
+.heading > h1
+{
+  font-weight: 400;
+  font-size: calc(62rem / 16);
+  line-height: calc(76rem / 16);
+}
+
+.heading > h1 > span
+{
+  font-weight: 700;
+}
+
+.description
+{
+  padding-top: calc(30rem / 16);
+}
+
+.description > p
+{
+  font-size: calc(23rem / 16);
+  line-height: 134%;
+  letter-spacing: calc(calc(23rem / 16) * 0.07);
+}
+
+.buttons
+{
+  width: 100%;
+  height: calc(75rem / 16);
+}
+
+.buttons > div
+{
+  width: 40vw;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary_button, .secondary_button
+{
+  width: calc(325rem / 16);
+  height: calc(75rem / 16);
+
+  font-size: calc(13rem / 16);
+  font-weight: 500;
+  letter-spacing: calc(calc(13rem / 16) * 0.175);
+
+  border-radius: calc(32rem / 16);
+  
+  cursor: pointer;
+
+  margin-right: calc(100rem / 16);
+  border: 0;
+}
+
+
+.primary_button
+{
+  background: var(--foreground-primary);
+  color: var(--background-primary-text);
+}
+
+.primary_button:hover
+{
+  background: none;
+  color: var(--foreground-primary);
+  outline: 1px solid var(--background-secondary);
+}
+
+.secondary_button
+{
+  background: none;
+  outline: 1px solid var(--background-secondary);
+}
+
+.secondary_button:hover
+{
+  background: var(--foreground-primary);
+  color: var(--background-primary-text);
+}
+
+.spacer
+{
+  padding: 10vh 10vw;
+  padding-bottom: calc(300rem / 16);
+  
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root
+{
+  --background-primary: linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), linear-gradient(180deg, #FFBB76 0%, #FFFD6D 100%);
+  --background-primary-reverse: linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), linear-gradient(180deg, #FFFD6D 0%, #FFBB76 100%);
+  --background-primary-text: #FFE392;
+  --background-secondary: #342B3D;
+
+  --foreground-primary: #342B3D;
+  --foreground-secondary: #FFD0DC;
+
+  font-size: 12.8px;
+}
+
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+body
+{
+  background: var(--background-secondary);
+}
