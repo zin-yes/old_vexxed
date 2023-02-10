@@ -1,7 +1,7 @@
 .container
 {
-  width: 100vw;
-  height: 115vh;
+  width: calc(100vw - var(--scrollbar-thickness));
+  height: 120vh;
 
   background: var(--background-primary); 
 
@@ -139,7 +139,8 @@
 
 .footer
 {
-  margin: calc(-150rem / 16) 7vw 0 7vw;
+  margin: calc(-160rem / 16) 7vw 0 7vw;
+  height: calc(320rem / 16);
 }
 
 .footer > div

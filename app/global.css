@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
-:root
+:root 
 {
   --background-primary: linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), linear-gradient(180deg, #FFBB76 0%, #FFFD6D 100%);
   --background-primary-reverse: linear-gradient(0deg, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.23)), linear-gradient(180deg, #FFFD6D 0%, #FFBB76 100%);
@@ -10,10 +10,12 @@
   --foreground-primary: #342B3D;
   --foreground-secondary: #FFD0DC;
 
-  font-size: 12.8px;
+  --scrollbar-thickness: 0.2vw;
+
+  font-size: 16px;
 }
 
-*
+* 
 {
   box-sizing: border-box;
   padding: 0;
@@ -24,7 +26,59 @@
   scroll-behavior: smooth;
 }
 
-body
+body 
 {
   background: var(--background-secondary);
+}
+
+
+::-webkit-scrollbar 
+{
+  width: var(--scrollbar-thickness);
+  height: 2px;
+}
+
+::-webkit-scrollbar-button 
+{
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  background: var(--foreground-secondary);
+  border: 0px none var(--foreground-secondary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: var(--foreground-secondary);
+}
+
+::-webkit-scrollbar-thumb:active 
+{
+  background: var(--foreground-secondary);
+}
+
+::-webkit-scrollbar-track 
+{
+  background: var(--background-secondary);
+  border: 0px none var(--foreground-secondary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover 
+{
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-track:active 
+{
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-corner 
+{
+  background: transparent;
 }
