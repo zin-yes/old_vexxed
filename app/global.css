@@ -82,3 +82,60 @@ body
 {
   background: transparent;
 }
+
+
+
+@media (orientation: landscape) and (max-width: 1600px)
+{
+  :root
+  {
+    font-size: calc(16px * 0.8);
+  }
+
+  svg
+  {
+    transform: scale(0.8);
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1400px)
+{
+  :root
+  {
+    font-size: calc(16px * 0.6);
+  }
+  
+  svg
+  {
+    transform: scale(0.6);
+  }
+}
+
+
+
+@media (orientation: portrait) and (max-width: 1000px)
+{
+  :root
+  {
+    font-size: calc(16px * 0.6);
+  }
+
+  svg
+  {
+    transform: scale(0.7);
+  }
+}
+
+@media (orientation: portrait) and (max-width: 400px)
+{
+  :root
+  {
+    font-size: calc(16px * 0.4);
+  }
+
+  svg
+  {
+    transform: scale(0.6);
+  }
+}
+

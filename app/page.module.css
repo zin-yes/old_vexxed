@@ -1,9 +1,3 @@
-.spacer
-{
-  width: calc(100vw - var(--scrollbar-thickness));
-  height: calc(175rem / 16);
-}
-
 .container
 {
   width: calc(100vw - var(--scrollbar-thickness));

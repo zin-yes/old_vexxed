@@ -13,7 +13,6 @@ export default function Page()
         <div id="home">
           <Hero />
         </div>
-        <div className={styles.spacer} />
         <div id="experience">
           <Experience />
         </div>

@@ -151,23 +151,25 @@ export default function Section()
     }
   };
 
-  return <div className={styles.container}>
-      <div className={styles.spacer}>
-        <div className={styles.content_container}>
-          <Header 
-            title={header.title}
-            description={header.description}
+  return <>
+      <div className={styles.container}>
+        <div className={styles.spacer}>
+          <div className={styles.content_container}>
+            <Header 
+              title={header.title}
+              description={header.description}
+            />
+            <Mascot />
+          </div>
+          <Buttons 
+            primary={primary}
+            secondary={secondary}
           />
-          <Mascot />
         </div>
-        <Buttons 
-          primary={primary}
-          secondary={secondary}
-        />
       </div>
       <Footer 
         subheading={"WHAT WE DO BEST"}
         heading={"We at VEXXED create beautiful, reliable, and affordable web experiences for small local businesses"}
       />
-    </div>
+    </>
 }

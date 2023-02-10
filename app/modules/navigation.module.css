@@ -6,6 +6,9 @@
   top: 0;
   left: 0;
   mix-blend-mode: difference;
+
+  width: 100vw;
+  z-index: 3;
 }
 
 .container > nav
@@ -80,4 +83,18 @@
   background: black;
   width: 10px;
   height: 10px;
+}
+
+
+@media (orientation: portrait)
+{
+  .items
+  {
+    display: none;
+  }
+
+  .container > nav
+  {
+    height: 12.5vh;
+  }
 }

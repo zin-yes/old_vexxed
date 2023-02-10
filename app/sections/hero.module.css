@@ -1,12 +1,17 @@
 .container
 {
   width: calc(100vw - var(--scrollbar-thickness));
-  height: 120vh;
+  min-height: 100vh;
 
   background: var(--background-primary); 
 
   border-radius: 0 0 calc(32rem / 16) calc(32rem / 16);
   box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .content_container
@@ -16,7 +21,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
+  padding-bottom: 10vh;
 }
 
 .header > header > *
@@ -66,13 +71,13 @@
 .buttons
 {
   width: 100%;
-  height: calc(75rem / 16);
+  height: fit-content;
 }
 
 .buttons > div
 {
   width: 40vw;
-  height: 100%;
+  height: fit-content;
   
   display: flex;
   flex-direction: row;
@@ -125,12 +130,13 @@
 
 .spacer
 {
-  padding: 10vh 10vw;
-  padding-bottom: calc(300rem / 16);
-  
   width: 100%;
-  height: 100%;
-
+  height: 115vh;
+  
+  padding: 10vh 10vw;
+  padding-bottom: calc(15vh + 300rem / 16);
+  padding-top: 25vh;
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -139,8 +145,13 @@
 
 .footer
 {
-  margin: calc(-160rem / 16) 7vw 0 7vw;
-  height: calc(320rem / 16);
+  margin: 0 7vw;
+
+  margin-top: calc(-100rem / 16);
+
+  margin-bottom: calc(100rem / 16);
+
+  z-index: 1;
 }
 
 .footer > div
@@ -150,8 +161,10 @@
 
   text-align: right;
   width: 100%;
-  padding: 10vh 7vw;
+  padding: calc(100rem / 16);
   border-radius: calc(32rem / 16);
+
+  padding-left: calc(200rem / 16);
 
   box-shadow: 0px 5px 82px rgba(0, 0, 0, 0.25);
 }
@@ -174,6 +187,99 @@
 {
   font-size: calc(20rem / 16);
   opacity: 0.5;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: calc(calc(20rem / 16) * 0.05);
+}
+
+@media (orientation: portrait)
+{
+
+  .container
+  {
+    height: 120vh;
+  } 
+
+  .content_container
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    height: 95%;
+  }
+  
+  .header
+  {
+    margin-bottom: 2vh;
+  }
+
+  .spacer
+  {
+    flex-direction: column;
+    
+    padding-top: 10vh;
+  }
+
+  .header, .header > header, .header > header > *
+  {
+    width: 100%;
+  }
+
+  .mascot
+  {
+    height: 40%;
+  }
+
+  .mascot > img
+  {
+    height: 100%;
+  }
+
+  .description > p
+  {
+    font-size: calc(33rem / 16);
+  }
+
+  .buttons
+  {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .buttons > div
+  {
+    height: fit-content;
+  }
+
+  .primary_button, .secondary_button
+  {
+    width: 100%;
+    height: 8vh;
+
+    font-size: calc(23rem / 16);
+    font-weight: 500;
+    letter-spacing: calc(calc(13rem / 16) * 0.175);
+
+    border-radius: calc(32rem / 16);
+  
+    cursor: pointer;
+
+    border: 0;
+    margin: 0;
+    margin: 1vh 0;
+  }
+
+  .footer > div
+  {
+    padding-left: calc(100rem / 16);
+  }
 }
